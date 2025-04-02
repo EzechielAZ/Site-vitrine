@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez DigitalBoost, votre agence de marketing digital. Demandez un devis ou une consultation gratuite pour votre stratégie digitale.">
+    <title>Contact | DigitalBoost - Agence de Marketing Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/+esm"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg viewBox="0 0 200 50" width="180" height="45">
+                        <text x="0" y="35" class="logo-text">Digital<tspan class="boost">Boost</tspan></text>
+                    </svg>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Contactez-nous</h1>
+                    <p>Discutons de votre projet digital et de la manière dont nous pouvons vous aider à atteindre vos objectifs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h2>Envoyez-nous un message</h2>
+                            <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                        </div>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Choisissez un sujet</option>
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="consultation">Consultation gratuite</option>
+                                    <option value="partenariat">Proposition de partenariat</option>
+                                    <option value="autre">Autre question</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <div class="captcha-container">
+                                    <div class="captcha">
+                                        <svg viewBox="0 0 200 60" width="200" height="60">
+                                            <rect width="200" height="60" fill="#f0f4fd" />
+                                            <path d="M20,30 Q40,10 60,30 T100,30 T140,30 T180,30" stroke="#4285f4" stroke-width="2" fill="none" />
+                                            <text x="30" y="35" font-family="Arial" font-size="20" fill="#333" transform="rotate(5, 30, 35)">C6R9</text>
+                                        </svg>
+                                    </div>
+                                    <input type="text" id="captcha" name="captcha" placeholder="Entrez le code ci-dessus" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button">Envoyer le message</button>
+                        </form>
+                        <div id="form-success" class="form-success" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message envoyé!</h3>
+                            <p>Nous avons bien reçu votre message et vous contacterons très bientôt.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-header">
+                                <h2>Informations de contact</h2>
+                                <p>Plusieurs façons de nous joindre</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:contact@digitalboost.fr">contact@digitalboost.fr</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Téléphone</h3>
+                                    <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Adresse</h3>
+                                    <p>123 Avenue Digitale</p>
+                                    <p>75000 Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Heures d'ouverture</h3>
+                                    <p>Lundi - Vendredi: 9h00 - 18h00</p>
+                                    <p>Samedi - Dimanche: Fermé</p>
+                                </div>
+                            </div>
+                            <div class="social-links-contact">
+                                <h3>Suivez-nous</h3>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Nous trouver</h2>
+                <div class="map-container">
+                    <svg viewBox="0 0 800 400" class="map-illustration">
+                        <rect width="800" height="400" fill="#e0e9ff" />
+                        
+                        <!-- Routes principales -->
+                        <rect x="100" y="50" width="600" height="30" fill="#d4d4d4" />
+                        <rect x="100" y="150" width="600" height="30" fill="#d4d4d4" />
+                        <rect x="100" y="250" width="600" height="30" fill="#d4d4d4" />
+                        <rect x="100" y="350" width="600" height="30" fill="#d4d4d4" />
+                        
+                        <rect x="150" y="50" width="30" height="330" fill="#d4d4d4" />
+                        <rect x="300" y="50" width="30" height="330" fill="#d4d4d4" />
+                        <rect x="450" y="50" width="30" height="330" fill="#d4d4d4" />
+                        <rect x="600" y="50" width="30" height="330" fill="#d4d4d4" />
+                        
+                        <!-- Bâtiments -->
+                        <rect x="200" y="100" width="50" height="50" fill="#aaa" />
+                        <rect x="350" y="100" width="70" height="30" fill="#aaa" />
+                        <rect x="500" y="90" width="40" height="60" fill="#aaa" />
+                        
+                        <rect x="200" y="200" width="70" height="30" fill="#aaa" />
+                        <rect x="500" y="200" width="50" height="40" fill="#aaa" />
+                        
+                        <rect x="200" y="300" width="50" height="40" fill="#aaa" />
+                        <rect x="350" y="290" width="60" height="50" fill="#aaa" />
+                        <rect x="500" y="300" width="30" height="40" fill="#aaa" />
+                        
+                        <!-- Notre bureau - mis en évidence -->
+                        <rect x="350" y="200" width="70" height="40" fill="#4285f4" />
+                        <text x="385" y="225" text-anchor="middle" fill="white" font-size="12">DigitalBoost</text>
+                        
+                        <!-- Marqueur de localisation -->
+                        <circle cx="385" cy="220" r="15" fill="#ea4335" />
+                        <path d="M385,210 L385,230 M375,220 L395,220" stroke="white" stroke-width="3" />
+                        
+                        <!-- Légende -->
+                        <rect x="650" y="100" width="100" height="80" fill="white" stroke="#aaa" />
+                        <text x="660" y="120" fill="#333" font-size="12">Légende</text>
+                        <rect x="660" y="130" width="15" height="15" fill="#4285f4" />
+                        <text x="680" y="142" fill="#333" font-size="10">Nos bureaux</text>
+                        <rect x="660" y="155" width="15" height="15" fill="#aaa" />
+                        <text x="680" y="167" fill="#333" font-size="10">Autres bâtiments</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quel est le délai pour obtenir un devis?</h3>
+                            <button class="faq-toggle"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nous nous engageons à vous fournir un devis détaillé dans un délai de 48 heures suivant votre demande. Pour des projets plus complexes, ce délai peut s'étendre jusqu'à 72 heures.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Proposez-vous des contrats à durée déterminée?</h3>
+                            <button class="faq-toggle"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Oui, nous proposons des contrats flexibles adaptés à vos besoins. Que vous souhaitiez un accompagnement ponctuel ou à long terme, nous avons des solutions pour vous.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Comment mesurez-vous les résultats de vos services?</h3>
+                            <button class="faq-toggle"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nous utilisons des outils d'analyse avancés pour suivre les performances de chaque action. Vous recevez des rapports réguliers détaillant les KPIs pertinents pour votre activité: trafic, conversions, engagement, etc.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Travaillez-vous avec des entreprises internationales?</h3>
+                            <button class="faq-toggle"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolument! Nous travaillons avec des clients du monde entier. Notre équipe est capable de développer des stratégies adaptées aux différents marchés internationaux et aux spécificités culturelles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 200 50" width="150" height="38">
+                            <text x="0" y="35" class="logo-text">Digital<tspan class="boost">Boost</tspan></text>
+                        </svg>
+                    </div>
+                    <p>Propulsez votre entreprise dans l'ère digitale avec nos stratégies de marketing digital innovantes et efficaces.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos services</h3>
+                    <ul>
+                        <li><a href="services.html#seo">SEO</a></li>
+                        <li><a href="services.html#ads">Publicité en ligne</a></li>
+                        <li><a href="services.html#social">Réseaux sociaux</a></li>
+                        <li><a href="services.html#content">Création de contenu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@digitalboost.fr</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue Digitale, 75000 Paris</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DigitalBoost - Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <h3>Besoin d'aide?</h3>
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot">
+                <p>Bonjour! Comment puis-je vous aider aujourd'hui?</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="Tapez votre message...">
+            <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button id="chat-button" class="chat-button">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
+
